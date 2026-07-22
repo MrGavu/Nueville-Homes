@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neuville Homes | Build, Sell, Renovate & Design</title>
+<meta name="description" content="Neuvilla builds, sells, renovates and designs homes. Creating spaces you'll love coming home to.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+
+    <!-- LOGO -->
+    <!-- NOTE FOR CLIENT: replace the <span class="logo-mark"> SVG below with an <img src="assets/your-logo.png" alt="Neuville Homes"> tag
+         when your logo image is ready. The wordmark text can stay or be removed if your logo already includes it. -->
+    <a href="#" class="logo" aria-label="Neuville Homes home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 8.5C4 7.11929 5.11929 6 6.5 6H8V5C8 3.89543 8.89543 3 10 3H14C15.1046 3 16 3.89543 16 5V6H17.5C18.8807 6 20 7.11929 20 8.5V9H4V8.5Z" fill="currentColor"/>
+          <path d="M4 10.5H20V17.5C20 18.8807 18.8807 20 17.5 20H6.5C5.11929 20 4 18.8807 4 17.5V10.5Z" fill="currentColor"/>
+          <rect x="10.5" y="11.5" width="3" height="2.2" rx="0.4" fill="#B98D4F"/>
+        </svg>
+      </span>
+      <span class="logo-text">Neuville<br>Homes</span>
+    </a>
+
+    <!-- NAV -->
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="#about">About Us</a>
+      <a href="#projects">Our Projects</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- MOBILE TOGGLE -->
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="hero">
+
+    <!-- BACKGROUND VIDEO -->
+    <!-- NOTE FOR CLIENT: drop your looping video file into assets/ and update the <source src="..."> below.
+         The poster image (current landing photo) shows until the video loads, and is also the fallback
+         if a browser can't play video. Keep muted + playsinline + loop + autoplay for a silent auto-loop. -->
+    <div class="hero-media">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="assets/hero-poster.jpg">
+        <source src="assets/neuville-homes.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-heading">
+        <span class="hero-heading-thin">Neuvilla</span> builds, sells,<br>
+        renovates &amp; design
+      </h1>
+      <p class="hero-sub">
+        Creating spaces you&rsquo;ll love coming home to is what we do best. At Homes,
+        our passion for design and dedication to quality bring your unique vision to life.
+      </p>
+    </div>
+
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
