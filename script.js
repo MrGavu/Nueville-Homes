@@ -35,3 +35,40 @@ document.addEventListener('keydown', (e) => {
 window.addEventListener('resize', () => {
   if (window.innerWidth > 900) closeNav();
 });
+
+// Header switches from transparent-over-hero to solid once the page scrolls
+const siteHeader = document.getElementById('siteHeader');
+const hero = document.getElementById('hero');
+
+function updateHeaderState(){
+  const threshold = hero ? hero.offsetHeight - 90 : 80;
+  siteHeader.classList.toggle('is-scrolled', window.scrollY > threshold);
+}
+
+updateHeaderState();
+window.addEventListener('scroll', updateHeaderState, { passive: true });
+window.addEventListener('resize', updateHeaderState);
+
+// Footer year
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// Gentle reveal-on-scroll for section headings and cards
+const revealTargets = document.querySelectorAll(
+  '.section-head, .about-copy, .about-collage, .service-card, .gallery-item, .stat, .why-item, .testimonial-card'
+);
+
+if ('IntersectionObserver' in window && revealTargets.length){
+  revealTargets.forEach(el => el.classList.add('reveal'));
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+  revealTargets.forEach(el => revealObserver.observe(el));
+}
