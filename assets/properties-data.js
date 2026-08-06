@@ -19,8 +19,8 @@ window.NEUVILLE_PROPERTIES = [
     name: "Newton Villa",
     type: "New Construction",
     status: "Available",
-    location: "East Legon, Accra, Ghana",
-    mapQuery: "East Legon, Accra, Ghana",
+    location: "East Legon Hills, Greater Accra, Ghana",
+    mapQuery: "East Legon Hills, Greater Accra, Ghana",
     heroImage: "assets/newton-villa-3.jpg",
     gallery: [
       "assets/newton-villa-3.jpg",
@@ -30,21 +30,20 @@ window.NEUVILLE_PROPERTIES = [
     ],
     video: "assets/neuville-homes.mp4",
     about: [
-      "Newton Villa is a ground-up build set along a quiet riverside plot in East Legon, designed around long sightlines, cross-ventilation, and a material palette that ages well rather than dates quickly.",
-      "The layout keeps the main living spaces open to the garden and pool deck, while bedrooms sit on a separate wing for privacy. Every finish, from the kitchen stone to the door hardware, was chosen for durability first."
+      "Nestled in the prestigious East Legon Hills, Newton Villa is a signature residence by Neuville Homes, crafted for those who appreciate understated elegance and exceptional design. Defined by clean architectural lines, generous natural light, and meticulously curated interiors, every space is designed to deliver comfort, sophistication, and effortless living.",
+      "From the seamless indoor-outdoor flow to the private swimming pool and premium finishes, Newton Villa offers a refined lifestyle in one of Accra's most desirable neighborhoods."
     ],
     facts: [
       { label: "Type", value: "New Construction" },
-      { label: "Location", value: "East Legon, Accra" },
+      { label: "Location", value: "East Legon Hills, Greater Accra" },
       { label: "Status", value: "Available" }
     ],
     amenities: [
-      "CCTV Security System", "Air Conditioning (All Rooms)", "Instant Water Heater",
-      "Standby Generator", "Borehole Water Supply", "Fitted Modern Kitchen",
-      "Walk-in Wardrobes", "Swimming Pool", "Landscaped Garden",
-      "Covered Parking (2+ Cars)", "Perimeter Wall & Electric Gate", "Staff Quarters",
-      "Smart Home Wiring", "Fibre-Ready Internet", "Solar Power Backup",
-      "Fire & Smoke Detection", "Rainwater Harvesting", "En-suite Bathrooms"
+      "3 Luxury Ensuite Bedrooms", "ADesigner Fitted Kitchen", "Spacious Living & Dining Areas",
+      "Guest Powder Room", "Private Swimming Pool", "Landscaped Garden",
+      "3-Car Parking", "High Ceilings & Floor-to-Ceiling Windows", "Premium Finishes & Fixtures",
+      "CCTV Security System", "Air Conditioning", "Water Heating System",
+      "Backup Power Supply"
     ]
   },
   {
@@ -52,8 +51,8 @@ window.NEUVILLE_PROPERTIES = [
     name: "Novo",
     type: "Renovation",
     status: "Available",
-    location: "Spintex, Accra, Ghana",
-    mapQuery: "Spintex, Accra, Ghana",
+    location: "Spintex, Greater Accra, Ghana",
+    mapQuery: "Spintex, Greater Accra, Ghana",
     heroImage: "assets/novo-1.JPG",
     gallery: [
       "assets/novo-1.JPG",
@@ -62,8 +61,8 @@ window.NEUVILLE_PROPERTIES = [
     ],
     video: null,
     about: [
-      "Novo began as a dated 1990s bungalow and was reworked down to the frame — new roofline, new services, and a completely reorganised floor plan that opens the living areas onto a rebuilt courtyard.",
-      "We kept what was structurally sound and worth keeping, and replaced everything else with materials suited to the climate: better insulation, wider eaves, and cross-breeze windows throughout."
+      "Nestled in the sought-after neighborhood of Nanakrom, Ashaley Botwe, Novo is an exclusive collection of contemporary twin homes thoughtfully designed for modern family living. Defined by clean architectural lines, expansive glazing, generous natural light, and timeless finishes, Novo seamlessly blends elegance, comfort, and functionality.",
+      "Each residence features four spacious en-suite bedrooms, a staff quarters (bunker) with a private bathroom, a guest powder room, and a striking central skylight that fills the home with natural daylight, creating bright, airy interiors throughout the day. Thoughtfully planned living and dining spaces flow effortlessly into beautifully landscaped outdoor areas, offering the perfect balance of privacy, comfort, and sophistication. Crafted with meticulous attention to detail and premium materials, Novo delivers a refined lifestyle in one of Accra's most desirable residential communities."
     ],
     facts: [
       { label: "Type", value: "Renovation" },
@@ -71,11 +70,9 @@ window.NEUVILLE_PROPERTIES = [
       { label: "Status", value: "Available" }
     ],
     amenities: [
-      "CCTV Security System", "Air Conditioning (All Rooms)", "Instant Water Heater",
-      "Standby Generator", "Borehole Water Supply", "Fitted Modern Kitchen",
-      "Walk-in Wardrobes", "Covered Parking (2+ Cars)", "Perimeter Wall & Electric Gate",
-      "Smart Home Wiring", "Fibre-Ready Internet", "Fire & Smoke Detection",
-      "Rainwater Harvesting", "En-suite Bathrooms"
+      "Fully fitted modern kitchen", "Landscaped gardens", "Central skylight",
+      "CCTV security system", "Air conditioning", "Water heating system",
+      "Backup power supply"
     ]
   },
   {
