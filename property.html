@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Property | Neuville Homes</title>
+<meta name="description" content="Property details from Neuville Homes.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="property-page">
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+
+    <a href="index.html" class="logo" aria-label="Neuville Homes home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 8.5C4 7.11929 5.11929 6 6.5 6H8V5C8 3.89543 8.89543 3 10 3H14C15.1046 3 16 3.89543 16 5V6H17.5C18.8807 6 20 7.11929 20 8.5V9H4V8.5Z" fill="currentColor"/>
+          <path d="M4 10.5H20V17.5C20 18.8807 18.8807 20 17.5 20H6.5C5.11929 20 4 18.8807 4 17.5V10.5Z" fill="currentColor"/>
+          <rect x="10.5" y="11.5" width="3" height="2.2" rx="0.4" fill="#B98D4F"/>
+        </svg>
+      </span>
+      <span class="logo-text">Neuville<br>Homes</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================================
+       PROPERTY HERO — populated by property.js
+       ============================================ -->
+  <section class="hero property-hero" id="hero">
+    <div class="hero-media">
+      <img class="property-hero-img" id="propHeroImg" src="" alt="">
+      <div class="hero-overlay" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero-content property-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="index.html#gallery">Gallery</a>
+        <span>/</span>
+        <span id="propBreadcrumbName">Property</span>
+      </nav>
+      <p class="eyebrow eyebrow--light" id="propType">&nbsp;</p>
+      <h1 class="hero-heading property-hero-heading" id="propName">&nbsp;</h1>
+      <p class="hero-sub" id="propLocation">&nbsp;</p>
+    </div>
+
+    <a href="#gallery-section" class="scroll-cue" aria-label="Scroll to content">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- Quick facts strip -->
+  <section class="property-facts">
+    <div class="section-inner property-facts-inner" id="propFacts"></div>
+  </section>
+
+  <!-- ============================================
+       VIDEO (only rendered by JS when a property has one)
+       ============================================ -->
+  <section class="section property-video-section" id="propVideoSection" hidden>
+    <div class="section-inner">
+      <p class="eyebrow">Walkthrough</p>
+      <h2 class="section-heading">See it in motion.</h2>
+      <div class="property-video-wrap">
+        <video id="propVideo" controls muted playsinline poster="">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       GALLERY
+       ============================================ -->
+  <section class="section property-gallery-section" id="gallery-section">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="eyebrow">Gallery</p>
+        <h2 class="section-heading">Every room,<br>every detail.</h2>
+      </div>
+      <div class="property-gallery-grid" id="propGalleryGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT THE PROPERTY
+       ============================================ -->
+  <section class="section property-about">
+    <div class="section-inner property-about-grid">
+      <div>
+        <p class="eyebrow">About This Property</p>
+        <h2 class="section-heading" id="propAboutHeading">&nbsp;</h2>
+      </div>
+      <div class="property-about-copy" id="propAboutCopy"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       AMENITIES
+       ============================================ -->
+  <section class="section property-amenities">
+    <div class="section-inner">
+      <div class="section-head">
+        <p class="eyebrow">Amenities</p>
+        <h2 class="section-heading">What&rsquo;s included.</h2>
+      </div>
+      <ul class="amenities-grid" id="propAmenities"></ul>
+    </div>
+  </section>
+
+  <!-- ============================================
+       LOCATION — full-width map
+       ============================================ -->
+  <section class="property-map-section">
+    <div class="property-map-head section-inner">
+      <p class="eyebrow">Location</p>
+      <h2 class="section-heading" id="propMapHeading">Find it on the map.</h2>
+    </div>
+    <div class="property-map-frame">
+      <iframe
+        id="propMapFrame"
+        src=""
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Property location map">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA
+       ============================================ -->
+  <section class="section cta" id="contact">
+    <div class="section-inner cta-inner">
+      <p class="eyebrow eyebrow--light">Interested?</p>
+      <h2 class="cta-heading">Let&rsquo;s talk about<br><span id="propCtaName">this property</span>.</h2>
+      <p class="cta-sub">Ask about pricing, availability, or book a walkthrough — our team replies within one business day.</p>
+      <div class="cta-actions">
+        <a href="mailto:hello@neuvillehomes.com" class="btn btn-gold">Contact Us</a>
+        <a href="tel:+233548338492" class="btn btn-outline">Call +233(0) 54 833 8492</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Not-found state -->
+  <section class="section property-not-found" id="propNotFound" hidden>
+    <div class="section-inner" style="text-align:center;">
+      <p class="eyebrow">404</p>
+      <h2 class="section-heading">We couldn&rsquo;t find that property.</h2>
+      <p class="body-text" style="margin-left:auto;margin-right:auto;">It may have been taken down or the link is out of date.</p>
+      <a href="index.html#gallery" class="btn btn-gold" style="margin-top:32px;">Back to Gallery</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="site-footer">
+  <div class="section-inner footer-grid">
+
+    <div class="footer-brand">
+      <a href="index.html" class="logo" aria-label="Neuville Homes home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 8.5C4 7.11929 5.11929 6 6.5 6H8V5C8 3.89543 8.89543 3 10 3H14C15.1046 3 16 3.89543 16 5V6H17.5C18.8807 6 20 7.11929 20 8.5V9H4V8.5Z" fill="currentColor"/>
+            <path d="M4 10.5H20V17.5C20 18.8807 18.8807 20 17.5 20H6.5C5.11929 20 4 18.8807 4 17.5V10.5Z" fill="currentColor"/>
+            <rect x="10.5" y="11.5" width="3" height="2.2" rx="0.4" fill="#B98D4F"/>
+          </svg>
+        </span>
+        <span class="logo-text">Neuville<br>Homes</span>
+      </a>
+      <p class="footer-tagline">Creating spaces you&rsquo;ll love coming home to.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <p class="footer-col-title">Explore</p>
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#why-us">Why Us</a>
+    </nav>
+
+    <div class="footer-contact">
+      <p class="footer-col-title">Get in touch</p>
+      <a href="mailto:hello@neuvillehomes.com">hello@neuvillehomes.com</a>
+      <a href="tel:+233548338492">(+233) 54 833 8492</a>
+      <p class="footer-address">8 Willow Street, Spintex <br>Greater Accra, Ghana</p>
+    </div>
+
+    <div class="footer-social">
+      <p class="footer-col-title">Follow</p>
+      <div class="social-row">
+        <a href="#" aria-label="Neuville Homes on Instagram" class="social-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Neuville Homes on Facebook" class="social-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 21v-7h2.5l.5-3H14V9c0-.9.3-1.5 1.7-1.5H17V4.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H8.5v3H11v7h3Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#" aria-label="Neuville Homes on LinkedIn" class="social-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 10v6.2M7.5 7.8v.01M11.8 16.2v-3.6c0-1.2.7-2 1.9-2 1.1 0 1.8.8 1.8 2v3.6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="section-inner footer-bottom-inner">
+      <p>&copy; <span id="year">2026</span> Neuville Homes. All rights reserved.</p>
+      <p class="footer-fine">Licensed &amp; insured builder &middot; Equal Housing Opportunity</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+  <p class="lightbox-count" id="lightboxCount"></p>
+</div>
+
+<script src="assets/properties-data.js"></script>
+<script src="script.js"></script>
+<script src="property.js"></script>
+</body>
+</html>
