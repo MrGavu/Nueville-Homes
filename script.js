@@ -7,6 +7,7 @@ function closeNav(){
   navToggle.classList.remove('is-open');
   navToggle.setAttribute('aria-expanded', 'false');
   document.body.style.overflow = '';
+  if (typeof closeDropdowns === 'function') closeDropdowns();
 }
 
 function openNav(){
@@ -21,14 +22,41 @@ navToggle.addEventListener('click', () => {
   isOpen ? closeNav() : openNav();
 });
 
-// Close menu when a nav link is tapped (mobile)
+// Close menu when a nav link is tapped (mobile) — except the Projects
+// trigger, which toggles its dropdown instead of navigating away
 mainNav.querySelectorAll('a').forEach(link => {
+  if (link.classList.contains('nav-dropdown-trigger')) return;
   link.addEventListener('click', closeNav);
 });
 
 // Close on escape key
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeNav();
+  if (e.key === 'Escape'){
+    closeNav();
+    closeDropdowns();
+  }
+});
+
+// Projects dropdown — tap to toggle (mobile/touch), hover handles desktop via CSS
+const dropdownTrigger = document.querySelector('.nav-item.has-dropdown > .nav-dropdown-trigger');
+const dropdownItem = document.querySelector('.nav-item.has-dropdown');
+
+function closeDropdowns(){
+  if (dropdownItem) dropdownItem.classList.remove('is-open');
+}
+
+if (dropdownTrigger && dropdownItem){
+  dropdownTrigger.addEventListener('click', (e) => {
+    if (window.innerWidth <= 900){
+      e.preventDefault();
+      dropdownItem.classList.toggle('is-open');
+    }
+  });
+}
+
+// Close dropdown when clicking elsewhere
+document.addEventListener('click', (e) => {
+  if (dropdownItem && !e.target.closest('.nav-item.has-dropdown')) closeDropdowns();
 });
 
 // Close if window is resized back to desktop
