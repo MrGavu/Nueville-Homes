@@ -70,11 +70,18 @@ button{ font-family: inherit; }
   justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.14);
-  color: #ffffff;
   flex-shrink: 0;
+  position: relative;
 }
+
+.logo-img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-img--green{ display: none; }
 
 .logo-text{
   font-family: var(--font-display);
@@ -433,10 +440,9 @@ button{ font-family: inherit; }
 
 .site-header.is-scrolled .main-nav a::after{ background: var(--color-ink); }
 
-.site-header.is-scrolled .logo-mark{
-  background: rgba(26, 23, 18, 0.08);
-  color: var(--color-ink);
-}
+.site-header.is-scrolled .logo-img--white{ display: none; }
+
+.site-header.is-scrolled .logo-img--green{ display: block; }
 
 .site-header.is-scrolled .nav-toggle span{ background: var(--color-ink); }
 
@@ -843,7 +849,6 @@ button{ font-family: inherit; }
 }
 
 .footer-brand .logo-text{ color: #ffffff; }
-.footer-brand .logo-mark{ background: rgba(255,255,255,0.14); color: #ffffff; }
 
 .footer-tagline{
   font-family: var(--font-body);
