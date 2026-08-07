@@ -32,7 +32,6 @@
   document.getElementById('propLocation').textContent = property.location;
   document.getElementById('propAboutHeading').textContent = property.name + '.';
   document.getElementById('propCtaName').textContent = property.name;
-  document.getElementById('propMapHeading').innerHTML = 'Find <span>' + property.name + '</span> on the map.';
 
   // ---- Hero image ----
   const heroImg = document.getElementById('propHeroImg');
@@ -44,18 +43,6 @@
   factsWrap.innerHTML = property.facts.map(f =>
     '<div class="fact"><span class="fact-label">' + f.label + '</span><span class="fact-value">' + f.value + '</span></div>'
   ).join('');
-
-  // ---- Video (only if the property has one) ----
-  if (property.video) {
-    const section = document.getElementById('propVideoSection');
-    const video = document.getElementById('propVideo');
-    const source = document.createElement('source');
-    source.src = property.video;
-    source.type = 'video/mp4';
-    video.appendChild(source);
-    video.poster = property.heroImage;
-    section.hidden = false;
-  }
 
   // ---- Gallery ----
   const galleryGrid = document.getElementById('propGalleryGrid');
@@ -74,10 +61,6 @@
   amenitiesList.innerHTML = property.amenities.map(a =>
     '<li class="amenity-item"><span class="amenity-check" aria-hidden="true">&#10003;</span>' + a + '</li>'
   ).join('');
-
-  // ---- Map ----
-  const mapFrame = document.getElementById('propMapFrame');
-  mapFrame.src = 'https://www.google.com/maps?q=' + encodeURIComponent(property.mapQuery) + '&output=embed';
 
   // ---- Lightbox ----
   const lightbox = document.getElementById('lightbox');

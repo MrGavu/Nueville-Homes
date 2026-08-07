@@ -20,7 +20,6 @@ window.NEUVILLE_PROPERTIES = [
     type: "New Construction",
     status: "Available",
     location: "East Legon Hills, Greater Accra, Ghana",
-    mapQuery: "East Legon Hills, Greater Accra, Ghana",
     heroImage: "assets/newton-villa-3.jpg",
     gallery: [
       "assets/newton-villa-3.jpg",
@@ -52,7 +51,6 @@ window.NEUVILLE_PROPERTIES = [
     type: "Renovation",
     status: "Available",
     location: "Spintex, Greater Accra, Ghana",
-    mapQuery: "Spintex, Greater Accra, Ghana",
     heroImage: "assets/novo-1.JPG",
     gallery: [
       "assets/novo-1.JPG",
@@ -80,8 +78,7 @@ window.NEUVILLE_PROPERTIES = [
     name: "Concorde",
     type: "Interior Design",
     status: "Available",
-    location: "Airport Residential Area, Accra, Ghana",
-    mapQuery: "Airport Residential Area, Accra, Ghana",
+    location: "Ashaley Botwe, Accra, Ghana",
     heroImage: "assets/concorde-1.jpg",
     gallery: [
       "assets/concorde-1.jpg",
@@ -90,19 +87,18 @@ window.NEUVILLE_PROPERTIES = [
     ],
     video: null,
     about: [
-      "Concorde is a full interior direction project: material studies, joinery, lighting and furniture layout, built out inside an existing shell in Airport Residential. The brief was warm minimalism — oak, limestone, and restraint.",
-      "Every material decision was tested as a physical sample against the site's natural light before being specified, which is why the palette reads so consistently from room to room."
+      "The Concorde is a contemporary twin townhouse in Ashaley Botwe, thoughtfully designed for modern family living. Featuring three spacious en-suite bedrooms, two elegant living areas, and an open-plan layout, it blends comfort with timeless style. The home includes a fitted kitchen, laundry room, staff quarters, backup power and water supply, and parking for up to four vehicles.",
+      "Every detail has been carefully considered to deliver a seamless balance of luxury, functionality, and everyday convenience. Located in one of Accra's most desirable neighborhoods, The Concorde offers refined living in a peaceful setting with easy access to the city."
     ],
     facts: [
       { label: "Type", value: "Interior Design" },
-      { label: "Location", value: "Airport Residential, Accra" },
+      { label: "Location", value: "Ashaley Botwe, Accra" },
       { label: "Status", value: "Available" }
     ],
     amenities: [
-      "CCTV Security System", "Air Conditioning (All Rooms)", "Instant Water Heater",
-      "Fitted Modern Kitchen", "Walk-in Wardrobes", "Covered Parking (2+ Cars)",
-      "Smart Home Wiring", "Fibre-Ready Internet", "Solar Power Backup",
-      "Fire & Smoke Detection", "En-suite Bathrooms"
+      "Fitted Kitchen", "CCTV security", "Air conditioning",
+      "Water Heating System", "Backup power supply", "Laundry room",
+      "Staff Bunker"
     ]
   },
   {
@@ -111,7 +107,6 @@ window.NEUVILLE_PROPERTIES = [
     type: "Renovation",
     status: "Available",
     location: "Cantonments, Accra, Ghana",
-    mapQuery: "Cantonments, Accra, Ghana",
     heroImage: "assets/home-3.jpg",
     gallery: [
       "assets/home-3.jpg",
@@ -142,7 +137,6 @@ window.NEUVILLE_PROPERTIES = [
     type: "Interior Design",
     status: "Available",
     location: "Trasacco Valley, Accra, Ghana",
-    mapQuery: "Trasacco Valley, Accra, Ghana",
     heroImage: "assets/home-7.jpg",
     gallery: [
       "assets/home-7.jpg",
