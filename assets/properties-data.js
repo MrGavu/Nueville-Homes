@@ -17,23 +17,22 @@ window.NEUVILLE_PROPERTIES = [
   {
     id: "newton-villa",
     name: "Newton Villa",
-    type: "New Construction",
+    type: "Premium Architecture",
     status: "Available",
     location: "East Legon Hills, Greater Accra, Ghana",
-    heroImage: "assets/newton-villa-3.jpg",
+    heroImage: "assets/newton-villa-4.jpg",
     gallery: [
-      "assets/newton-villa-3.jpg",
-      "assets/newton-villa-2.jpg",
-      "assets/home-5.JPG",
-      "assets/home-1.jpg"
+      "assets/newton-villa-5.jpg",
+      "assets/newton-villa-7.jpg",
+      "assets/newton-villa-6.jpg",
+      "assets/newton-villa-3.jpg"
     ],
-    video: "assets/neuville-homes.mp4",
     about: [
       "Nestled in the prestigious East Legon Hills, Newton Villa is a signature residence by Neuville Homes, crafted for those who appreciate understated elegance and exceptional design. Defined by clean architectural lines, generous natural light, and meticulously curated interiors, every space is designed to deliver comfort, sophistication, and effortless living.",
       "From the seamless indoor-outdoor flow to the private swimming pool and premium finishes, Newton Villa offers a refined lifestyle in one of Accra's most desirable neighborhoods."
     ],
     facts: [
-      { label: "Type", value: "New Construction" },
+      { label: "Type", value: "Premium Architecture" },
       { label: "Location", value: "East Legon Hills, Greater Accra" },
       { label: "Status", value: "Available" }
     ],
@@ -48,14 +47,15 @@ window.NEUVILLE_PROPERTIES = [
   {
     id: "novo",
     name: "Novo",
-    type: "Renovation",
+    type: "Exclusive Development",
     status: "Available",
-    location: "Spintex, Greater Accra, Ghana",
+    location: "Ashaley Botwe, Greater Accra, Ghana",
     heroImage: "assets/novo-1.JPG",
     gallery: [
-      "assets/novo-1.JPG",
-      "assets/home-4.jpg",
-      "assets/home-6.JPG"
+      "assets/novo-2.jpg",
+      "assets/novo-3.jpg",
+      "assets/novo-5.jpg",
+      "assets/novo-6.jpg",
     ],
     video: null,
     about: [
@@ -63,8 +63,8 @@ window.NEUVILLE_PROPERTIES = [
       "Each residence features four spacious en-suite bedrooms, a staff quarters (bunker) with a private bathroom, a guest powder room, and a striking central skylight that fills the home with natural daylight, creating bright, airy interiors throughout the day. Thoughtfully planned living and dining spaces flow effortlessly into beautifully landscaped outdoor areas, offering the perfect balance of privacy, comfort, and sophistication. Crafted with meticulous attention to detail and premium materials, Novo delivers a refined lifestyle in one of Accra's most desirable residential communities."
     ],
     facts: [
-      { label: "Type", value: "Renovation" },
-      { label: "Location", value: "Spintex, Accra" },
+      { label: "Type", value: "Exclusive Development" },
+      { label: "Location", value: "Ashaley Botwe, Greater Accra" },
       { label: "Status", value: "Available" }
     ],
     amenities: [
@@ -76,22 +76,23 @@ window.NEUVILLE_PROPERTIES = [
   {
     id: "concorde",
     name: "Concorde",
-    type: "Interior Design",
+    type: "Signature Concept",
     status: "Available",
     location: "Ashaley Botwe, Accra, Ghana",
-    heroImage: "assets/concorde-1.jpg",
+    heroImage: "assets/concorde-2.jpg",
     gallery: [
+      "assets/concorde-4.jpg",
+      "assets/concorde-2.jpg",
       "assets/concorde-1.jpg",
-      "assets/home-2.jpg",
-      "assets/home-8.jpg"
+      "assets/concorde-5.jpg"
     ],
-    video: null,
+
     about: [
       "The Concorde is a contemporary twin townhouse in Ashaley Botwe, thoughtfully designed for modern family living. Featuring three spacious en-suite bedrooms, two elegant living areas, and an open-plan layout, it blends comfort with timeless style. The home includes a fitted kitchen, laundry room, staff quarters, backup power and water supply, and parking for up to four vehicles.",
       "Every detail has been carefully considered to deliver a seamless balance of luxury, functionality, and everyday convenience. Located in one of Accra's most desirable neighborhoods, The Concorde offers refined living in a peaceful setting with easy access to the city."
     ],
     facts: [
-      { label: "Type", value: "Interior Design" },
+      { label: "Type", value: "Signature Concept" },
       { label: "Location", value: "Ashaley Botwe, Accra" },
       { label: "Status", value: "Available" }
     ],
@@ -101,63 +102,4 @@ window.NEUVILLE_PROPERTIES = [
       "Staff Bunker"
     ]
   },
-  {
-    id: "courtyard-house",
-    name: "Courtyard House",
-    type: "Renovation",
-    status: "Available",
-    location: "Cantonments, Accra, Ghana",
-    heroImage: "assets/home-3.jpg",
-    gallery: [
-      "assets/home-3.jpg",
-      "assets/home-4.jpg",
-      "assets/home-6.JPG"
-    ],
-    video: null,
-    about: [
-      "Courtyard House is built around a central open-air courtyard that pulls light and air into every room that touches it. The renovation opened up a previously boxed-in floor plan to make that courtyard the heart of the home.",
-      "Outdoor and indoor living are treated as one continuous space, with sliding glazing that disappears fully into the walls on both sides of the courtyard."
-    ],
-    facts: [
-      { label: "Type", value: "Renovation" },
-      { label: "Location", value: "Cantonments, Accra" },
-      { label: "Status", value: "Available" }
-    ],
-    amenities: [
-      "CCTV Security System", "Air Conditioning (All Rooms)", "Instant Water Heater",
-      "Standby Generator", "Fitted Modern Kitchen", "Walk-in Wardrobes",
-      "Landscaped Garden", "Covered Parking (2+ Cars)", "Perimeter Wall & Electric Gate",
-      "Smart Home Wiring", "Fibre-Ready Internet", "Rainwater Harvesting",
-      "En-suite Bathrooms"
-    ]
-  },
-  {
-    id: "the-long-view",
-    name: "The Long View",
-    type: "Interior Design",
-    status: "Available",
-    location: "Trasacco Valley, Accra, Ghana",
-    heroImage: "assets/home-7.jpg",
-    gallery: [
-      "assets/home-7.jpg",
-      "assets/home-8.jpg",
-      "assets/home-2.jpg"
-    ],
-    video: null,
-    about: [
-      "The Long View takes its name from the sightline the entire interior plan was built around — a single uninterrupted view from the front door through to the garden beyond. Furniture, lighting and joinery were all placed to protect it.",
-      "The result is a home that feels larger than its footprint, with every room reading as part of one continuous, calm sequence."
-    ],
-    facts: [
-      { label: "Type", value: "Interior Design" },
-      { label: "Location", value: "Trasacco Valley, Accra" },
-      { label: "Status", value: "Available" }
-    ],
-    amenities: [
-      "CCTV Security System", "Air Conditioning (All Rooms)", "Instant Water Heater",
-      "Fitted Modern Kitchen", "Walk-in Wardrobes", "Landscaped Garden",
-      "Covered Parking (2+ Cars)", "Smart Home Wiring", "Fibre-Ready Internet",
-      "Solar Power Backup", "Fire & Smoke Detection", "En-suite Bathrooms"
-    ]
-  }
 ];

@@ -69,7 +69,7 @@ button{ font-family: inherit; }
   align-items: center;
   justify-content: center;
   width: 180px;
-  height: 180px;
+  height: 120px;
   flex-shrink: 0;
   position: relative;
 }
@@ -82,15 +82,6 @@ button{ font-family: inherit; }
 }
 
 .logo-img--green{ display: none; }
-
-.logo-text{
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.3rem;
-  line-height: 1.08;
-  letter-spacing: 0.2px;
-  color: #ffffff;
-}
 
 .main-nav{
   display: flex;
@@ -341,8 +332,7 @@ button{ font-family: inherit; }
 @media (max-width: 560px){
   :root{ --container-pad: 22px; --header-h: 76px; }
 
-  .logo-mark{ width: 130px; height: 130px; border-radius: 11px; }
-  .logo-text{ font-size: 1.05rem; }
+  .logo-mark{ width: 130px; height: 100px; border-radius: 11px; }
 
   .hero-heading{ margin-bottom: 20px; }
   .hero-sub{ font-size: 0.98rem; }
@@ -928,8 +918,6 @@ button{ font-family: inherit; }
   padding-bottom: 60px;
   border-bottom: 1px solid rgba(247, 243, 236, 0.14);
 }
-
-.footer-brand .logo-text{ color: #ffffff; }
 
 .footer-tagline{
   font-family: var(--font-body);
